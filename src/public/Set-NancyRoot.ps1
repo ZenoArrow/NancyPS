@@ -9,7 +9,7 @@ function Set-NancyRoot {
         [string]$Path
     )
     process {
-        $ResolvedPath = Resolve-Path $Path -PathType Container -ErrorAction Stop
+        $ResolvedPath = Resolve-Path $Path -ErrorAction Stop
         if($ResolvedPath.Provider.Name -ne "FileSystem")
         {
             throw "The Nancy root must be a folder path that exists on the FileSystem"
