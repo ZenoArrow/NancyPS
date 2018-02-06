@@ -73,8 +73,8 @@
         ${script:Nancy Nancy Server}.Start();
 
         # Open it in the browser to prove it works
-            Start-Process ${script:Nancy Uri}
-            Write-Host "Nancy running on ${script:Nancy Uri}, call Stop-NancyHost to stop it"
-        }
+        Start-Process ${script:Nancy Uri}
+        Write-Host "Nancy running on ${script:Nancy Uri}, call Stop-NancyHost to stop it"
+        
     }
 }
