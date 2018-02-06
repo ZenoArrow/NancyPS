@@ -61,7 +61,7 @@
             [NancyPS.StaticBootstrapper]::DiagnosticsPassword = $DiagnosticsPassword
         }
 
-        if(!(Get-NancyHander)){
+        if(!(Get-NancyHandler)){
             # If they call Start without having any handlers, let's at least add a base one
             Set-NancyHandler -Path "/" -Handler { "Welcome to Nancy" }
         }
